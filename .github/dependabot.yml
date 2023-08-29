@@ -10,3 +10,13 @@ updates:
     commit-message:
       # Prefix all commit messages with "COMP: "
       prefix: "COMP"
+
+  - package-ecosystem: docker
+    directory: /.github/actions/slicer-build
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /Modules/Scripted/WebServer/Resources/docroot
+    schedule:
+      interval: daily
